@@ -9,5 +9,10 @@
 		<%= f.text_area :description %>
 	</div>
 
+	<div class="field">
+		<%= f.label :thumbnail %>
+		<%= f.file_field :thumbnail %>
+	</div>
+
 	<%= f.submit class: "button button_highlight button_block" %>
 <% end %>

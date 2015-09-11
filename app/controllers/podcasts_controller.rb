@@ -17,7 +17,6 @@ class PodcastsController < ApplicationController
 	def find_podcast
 		if params[:id].nil?
 			@podcast = current_podcast
-			100.times{puts @podcast.id}
 		else
 			@podcast = Podcast.find(params[:id])
 		end
