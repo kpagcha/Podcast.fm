@@ -9,7 +9,7 @@
         <div class="wrapper_skinny">
             <ul>
                 <li><%= link_to "Episodes", root_path %></li>
-                <li><%= link_to "New Episode", new_podcast_episode_path(@podcast), class: "current" %></li>
+                <li><%= link_to "New Episode", new_podcast_episode_path(@podcast) %></li>
 
                 <li><%= link_to "Account Settings", edit_podcast_registration_path %></li>
                 <li><%= link_to "View Podcast", @podcast %></li>
@@ -17,11 +17,11 @@
         </div>
     </div>
 
-	<div id="form">
-	    <div class="wrapper_skinny">
+    <div id="form">
+        <div class="wrapper_skinny">
 
-		<h1>New Episode</h1>
+        <h1>Edit Episode</h1>
 
-		<%= render 'form' %>
-	</div>
+        <%= render 'form' %>
+    </div>
 </div>
