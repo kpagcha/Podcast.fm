@@ -150,6 +150,12 @@
 			line-height: 1.7;
 			color: lighten($dark, 25%);
 		}
+		audio {
+			display: block;
+			width: 40%;
+			margin: 3rem auto 0px auto;
+			background-color: #33b;
+		}
 	}
 	#links {
 		padding: 2rem 0;

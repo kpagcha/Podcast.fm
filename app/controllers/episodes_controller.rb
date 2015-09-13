@@ -1,6 +1,6 @@
 class EpisodesController < ApplicationController
 	before_action :authenticate_podcast!, except: [ :show ]
-	before_action :require_permission
+	before_action :require_permission, except: [ :show ]
 	before_action :find_podcast
 	before_action :find_episode, only: [ :show, :edit, :update, :destroy ]
 
@@ -19,7 +19,7 @@ class EpisodesController < ApplicationController
 	end
 
 	def show
-		@episodes = @podcast.episodes.order("created_at desc").reject{ |e| e.id == @episode.id }
+		@episodes = @podcast.episodes.order("created_at desc").limit(6).reject{ |e| e.id == @episode.id }
 	end
 
 	def edit

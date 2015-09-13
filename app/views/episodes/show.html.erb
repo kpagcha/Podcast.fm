@@ -30,6 +30,7 @@
 			<%= image_tag @episode.thumbnail.url(:medium), class: "current_episode_thumbnail" %>
 			<h2><%= @episode.title %></h2>
 			<p class="description"><%= @episode.description %></p>
+			<%= render 'mp3' %>
 		</div>
 	</div>
 
@@ -52,11 +53,4 @@
 			</ul>
 		</div>
 	</div>
-</div>
-
-<div class="pagination">
-	<span class="previous_page disabled">Previous</span>
-	<em class="current">1</em>
-	<a href="#">2</a>
-	<a href="#" class="next_page">Next</a>
 </div>

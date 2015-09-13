@@ -1,0 +1,7 @@
+<% unless @episode.mp3.blank? %>
+	<div id="audio_container">
+		<audio controls>
+			<source src="<%= @episode.mp3.url %>">
+		</audio>
+	</div>
+<% end %>
