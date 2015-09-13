@@ -33,6 +33,20 @@ body {
 	clear: both;
 }
 
+#notice_wrapper {
+	width: 100%;
+	position: absolute;
+	background: rgba(288, 103, 82, .85);
+	z-index: 999;
+	p {
+		color: white;
+		text-align: center;
+		font-weight: 700;
+		font-size: 1.25rem;
+		padding: 1.1rem 0;
+	}
+}
+
 .button {
 	color: white;
 	text-decoration: none;
@@ -98,7 +112,7 @@ body {
 
 #banner {
 	background-repeat: no-repeat;
-	background-size: cover;
+	
 	background-position: center center;
 	margin-bottom: 4rem;
 	h1 {
